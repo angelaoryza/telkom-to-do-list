@@ -1,11 +1,10 @@
 // import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 // import DetailApp from '../../pages/taskDetail'
 import { Link } from 'react-router-dom'
-import DeleteTask from './DeleteTask'
 import { useState, useEffect } from 'react'
 import { query, where, collection, getCountFromServer } from "firebase/firestore"; 
 import { db } from '../../firebase'; 
-import { async } from '@firebase/util';
+
 const Tasks = ({tasks}) => {
     const background = require("../../img/rainbow.jpeg")
     const [tags, setTags] = useState([

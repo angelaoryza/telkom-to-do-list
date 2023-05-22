@@ -19,7 +19,7 @@ const Modal = () => {
 
         tags.map(tag => {
             if (tag.checked) {
-                activeTags.push(tag.name)
+                return activeTags.push(tag.name)
             }
         })
 
@@ -81,7 +81,7 @@ const Modal = () => {
     
         const handleOnChange = (pos) => {
             let updatedList = tags.map((tag, index) => {
-                if(index == pos) {
+                if(index === pos) {
                     return {...tag, checked: !tag.checked}
                 }
                 return tag;
