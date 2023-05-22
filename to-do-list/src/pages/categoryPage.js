@@ -36,7 +36,7 @@ const CategoryTask = () => {
         };
         handleFilter()
 
-        }, [tasks, {cat}])
+        }, [cat])
     const handleOnChange = async (id, done) => {
     
         const taskDocRef = doc(db, 'to-do-list', id)
