@@ -19,8 +19,9 @@ const Modal = () => {
 
         tags.map(tag => {
             if (tag.checked) {
-                return activeTags.push(tag.name)
+                activeTags.push(tag.name)
             }
+            return activeTags
         })
 
         try {
